@@ -1,0 +1,2 @@
+protoc --proto_path=$GOPATH/src:. --go_out=../src/share/pb/  xxx.ext.proto
+protoc --proto_path=$GOPATH/src:. --micro_out=../src/share/pb/  xxx.ext.proto

@@ -1,0 +1,18 @@
+syntax = "proto3";
+package pb;
+service WebshellServiceExt {
+    // Session会话
+    // 传入可访问shell文件地址和对方服务器语言
+    rpc RunCmdWithOutput(RunCmdWithOutputReq) returns(RunCmdWithOutputRsp) {}
+    
+}
+
+message RunCmdWithOutputReq {
+    string target = 1;   // http://172.31.50.248:8080/ant.php
+    string language = 2; // 对方服务器解释语言 php、jsp、asp
+    string cmd = 3;      // 终端命令
+}
+
+message RunCmdWithOutputRsp {
+    string output = 1;
+}
