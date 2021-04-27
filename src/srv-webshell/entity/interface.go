@@ -9,7 +9,7 @@ const (
 )
 
 type LanguageEntity interface {
-	RunCmdWithOutput() (string, error)
+	RunCmdWithOutput(cmd string) (string, error)
 }
 
 func LoadLanguageEntity(ly LangType, target, command string) LanguageEntity {

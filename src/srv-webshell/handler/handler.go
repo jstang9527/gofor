@@ -8,7 +8,7 @@ import (
 	"github.com/jstang9527/gofor/src/share/config"
 	"github.com/jstang9527/gofor/src/share/log"
 	"github.com/jstang9527/gofor/src/share/pb"
-	"github.com/jstang9527/gofor/src/webshell-srv/entity"
+	"github.com/jstang9527/gofor/src/srv-webshell/entity"
 	"github.com/micro/go-micro/errors"
 	"go.uber.org/zap"
 )
@@ -32,14 +32,15 @@ func (w *WebshellServiceExtHandler) RunCmdWithOutput(ctx context.Context, req *p
 	// 2. 获取对应的实体
 	obj := entity.LoadLanguageEntity(entity.PHP_ENV, req.Target, req.Cmd)
 	if obj == nil {
-		err := errors.New(config.ServiceNameUser, "language unsuppot", 200)
+		err := errors.New(config.ServiceNameUser, "unsupport lang", 200)
 		w.logger.Error("error", zap.Error(err))
 		return err
 	}
-	out, err := obj.RunCmdWithOutput()
+	// 3. 执行命令并返回
+	out, err := obj.RunCmdWithOutput(req.Cmd)
 	if err != nil {
 		w.logger.Error("error", zap.Error(err))
-		return errors.New(config.ServiceNameUser, "operation failed", 200)
+		return errors.New(config.ServiceNameUser, "failed operation", 200)
 	}
 	rsp.Output = out
 	return nil

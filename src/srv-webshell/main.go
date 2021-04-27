@@ -4,7 +4,7 @@ import (
 	"github.com/jstang9527/gofor/src/share/config"
 	"github.com/jstang9527/gofor/src/share/log"
 	"github.com/jstang9527/gofor/src/share/pb"
-	"github.com/jstang9527/gofor/src/webshell-srv/handler"
+	"github.com/jstang9527/gofor/src/srv-webshell/handler"
 	"github.com/micro/cli"
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/server"

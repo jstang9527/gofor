@@ -33,14 +33,17 @@ func (g *Gateway) handleJSONRPC(w http.ResponseWriter, r *http.Request) {
 	var response json.RawMessage
 	req := g.c.NewRequest(service, method, &request, client.WithContentType("application/json"))
 	err := g.c.Call(path.RequestToContext(r), req, &response)
+
+	out := ""
 	if err != nil {
-		log.Println(err)
-		return
+		// 出错,把错误信息返回给客户端
+		out = err.Error()
+	} else {
+		b, _ := response.MarshalJSON()
+		out = string(b)
 	}
-	// 编码json
-	b, _ := response.MarshalJSON()
-	w.Header().Set("Content-Length", strconv.Itoa(len(b)))
-	if _, err = w.Write(b); err != nil {
+	w.Header().Set("Content-Length", strconv.Itoa(len([]byte(out))))
+	if _, err = w.Write([]byte(out)); err != nil {
 		log.Println(err)
 	}
 }

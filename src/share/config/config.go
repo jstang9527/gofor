@@ -6,5 +6,6 @@ const (
 	Namespace           = "com.mtbapp."
 	LogPath             = "/root/go/src/github.com/jstang9527/gofor/logs" // "D:\\go_work\\src\\my-micro\\logdata"
 	ServiceNameWebshell = "webshell"
+	ServiceNameExploit  = "exploit"
 	ServiceNameUser     = "dev"
 )

@@ -5,6 +5,6 @@ type JSPEntity struct {
 	Command string
 }
 
-func (e *JSPEntity) RunCmdWithOutput() (string, error) {
+func (e *JSPEntity) RunCmdWithOutput(cmd string) (string, error) {
 	return "", nil
 }

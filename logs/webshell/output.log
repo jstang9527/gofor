@@ -8,3 +8,18 @@
 2021-04-22 18:30:49.848	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:33284
 2021-04-22 18:30:49.851	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-5e3b73c7-81dd-4abe-a7ee-f61bcfb6fd12
 2021-04-22 18:30:49.854	[34minfo[0m	webshell-srv/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
+2021-04-27 16:34:53.723	[34minfo[0m	webshell-srv/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
+2021-04-27 16:34:53.724	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:37213
+2021-04-27 16:34:53.724	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:46011
+2021-04-27 16:34:53.725	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-1e83bd05-83bd-4d5d-a0dd-9d989bd3ceb2
+2021-04-27 16:34:53.731	[34minfo[0m	webshell-srv/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
+2021-04-27 16:38:40.831	[34minfo[0m	srv-webshell/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
+2021-04-27 16:38:40.833	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:44409
+2021-04-27 16:38:40.833	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:37788
+2021-04-27 16:38:40.834	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-d3407484-da86-4bed-965a-a3ad1facaed7
+2021-04-27 16:38:40.839	[34minfo[0m	srv-webshell/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
+2021-04-27 16:42:44.075	[34minfo[0m	srv-webshell/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
+2021-04-27 16:42:44.079	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:37868
+2021-04-27 16:42:44.079	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:44479
+2021-04-27 16:42:44.080	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-7a9ecd89-35df-4ff3-9f8a-122b8a7c6455
+2021-04-27 16:42:44.087	[34minfo[0m	srv-webshell/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
