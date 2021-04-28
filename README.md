@@ -1,18 +1,21 @@
 # gofor
 一款集漏洞探测、攻击，Session会话，蜜罐识别等功能于一身的软件，基于go-micro微服务框架并对外提供统一HTTP API网关接口服务
 
-# HTTP API Gateway
+## HTTP API Gateway
 ```shell
-cd src/api-srv && \
-go run main.go
+./api-srv
 ```
 
-# Service Install(Optional)
-**Webshell**
-```shell
-cd src/webshell-srv && \
-go run main.go
+## Service Install(Optional)
+**Exploit**
 ```
+./srv-exploit
+```
+**Webshell**
+```webshell
+./srv-webshell
+```
+
 # Example
 [*] ThinkPHP5.0.20 RCE 攻击例子
 ```shell
@@ -32,4 +35,4 @@ curl -H "Content-Type:application/json;charset=utf-8" -X POST -d '{"target":"htt
 |--|--|
 | VUL-2021-04271  | Thinkphp5 5.0.22/5.1.29 Remote Code Execution Vulnerability |
 | VUL-2021-04272  | ThinkPHP5 5.0.23 Remote Code Execution Vulnerability |
-
+| CVE-2017-10271  | Weblogic < 10.3.6 'wls-wsat' XMLDecoder 反序列化漏洞 |

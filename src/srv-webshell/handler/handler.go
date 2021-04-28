@@ -30,12 +30,13 @@ func (w *WebshellServiceExtHandler) RunCmdWithOutput(ctx context.Context, req *p
 		return errors.New(config.ServiceNameUser, "invalid url", 200)
 	}
 	// 2. 获取对应的实体
-	obj := entity.LoadLanguageEntity(entity.PHP_ENV, req.Target, req.Cmd)
-	if obj == nil {
-		err := errors.New(config.ServiceNameUser, "unsupport lang", 200)
+	env, err := entity.SwitchLangType(req.Language)
+	if err != nil {
 		w.logger.Error("error", zap.Error(err))
-		return err
+		return errors.New(config.ServiceNameUser, "unsupport lang", 200)
 	}
+	obj := entity.LoadLanguageEntity(env, req.Target, req.Cmd)
+
 	// 3. 执行命令并返回
 	out, err := obj.RunCmdWithOutput(req.Cmd)
 	if err != nil {

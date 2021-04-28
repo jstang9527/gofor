@@ -1,5 +1,10 @@
 package entity
 
+import (
+	"errors"
+	"strings"
+)
+
 type LangType int
 
 const (
@@ -10,6 +15,20 @@ const (
 
 type LanguageEntity interface {
 	RunCmdWithOutput(cmd string) (string, error)
+}
+
+func SwitchLangType(lang string) (LangType, error) {
+	lang = strings.ToLower(lang)
+	switch lang {
+	case "php":
+		return PHP_ENV, nil
+	case "jsp":
+		return JSP_ENV, nil
+	case "asp":
+		return ASP_ENV, nil
+	default:
+		return 0, errors.New("unsupport lang")
+	}
 }
 
 func LoadLanguageEntity(ly LangType, target, command string) LanguageEntity {

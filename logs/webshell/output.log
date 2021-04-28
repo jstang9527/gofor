@@ -1,25 +1,5 @@
-2021-04-22 18:15:59.740	[34minfo[0m	webshell-srv/main.go:28	Info	{"webshell-srv": "webshell-srv is start ..."}
-2021-04-22 18:15:59.740	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:35442
-2021-04-22 18:15:59.740	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:36941
-2021-04-22 18:15:59.741	[34minfo[0m	log/log.go:20	Registry [consul] Registering node: com.mtbapp.webshell-411115c7-469e-45a3-aa50-979c7727e3c8
-2021-04-22 18:15:59.754	[34minfo[0m	webshell-srv/main.go:37	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
-2021-04-22 18:30:49.848	[34minfo[0m	webshell-srv/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
-2021-04-22 18:30:49.848	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:44214
-2021-04-22 18:30:49.848	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:33284
-2021-04-22 18:30:49.851	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-5e3b73c7-81dd-4abe-a7ee-f61bcfb6fd12
-2021-04-22 18:30:49.854	[34minfo[0m	webshell-srv/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
-2021-04-27 16:34:53.723	[34minfo[0m	webshell-srv/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
-2021-04-27 16:34:53.724	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:37213
-2021-04-27 16:34:53.724	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:46011
-2021-04-27 16:34:53.725	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-1e83bd05-83bd-4d5d-a0dd-9d989bd3ceb2
-2021-04-27 16:34:53.731	[34minfo[0m	webshell-srv/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
-2021-04-27 16:38:40.831	[34minfo[0m	srv-webshell/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
-2021-04-27 16:38:40.833	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:44409
-2021-04-27 16:38:40.833	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:37788
-2021-04-27 16:38:40.834	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-d3407484-da86-4bed-965a-a3ad1facaed7
-2021-04-27 16:38:40.839	[34minfo[0m	srv-webshell/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
-2021-04-27 16:42:44.075	[34minfo[0m	srv-webshell/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
-2021-04-27 16:42:44.079	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:37868
-2021-04-27 16:42:44.079	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:44479
-2021-04-27 16:42:44.080	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-7a9ecd89-35df-4ff3-9f8a-122b8a7c6455
-2021-04-27 16:42:44.087	[34minfo[0m	srv-webshell/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}
+2021-04-28 16:29:34.338	[34minfo[0m	srv-webshell/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
+2021-04-28 16:29:34.341	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:33759
+2021-04-28 16:29:34.341	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:38007
+2021-04-28 16:29:34.343	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-1b3477eb-f91c-4fc1-942e-a17af20e8a7a
+2021-04-28 16:29:34.350	[34minfo[0m	srv-webshell/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}

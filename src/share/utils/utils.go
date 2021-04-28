@@ -3,6 +3,7 @@ package utils
 import (
 	"fmt"
 	"net"
+	"strings"
 )
 
 // 获取可用端口
@@ -28,4 +29,16 @@ func GetLocalIP() (string, error) {
 	}
 	defer conn.Close()
 	return conn.LocalAddr().String(), nil
+}
+
+func SingleJoiningSlash(a, b string) string {
+	aslash := strings.HasSuffix(a, "/")
+	bslash := strings.HasPrefix(b, "/")
+	switch {
+	case aslash && bslash:
+		return a + b[1:]
+	case !aslash && !bslash:
+		return a + "/" + b
+	}
+	return a + b
 }
