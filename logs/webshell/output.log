@@ -1,5 +1,0 @@
-2021-04-28 16:29:34.338	[34minfo[0m	srv-webshell/main.go:26	Info	{"webshell-srv": "webshell-srv is start ..."}
-2021-04-28 16:29:34.341	[34minfo[0m	log/log.go:20	Transport [http] Listening on [::]:33759
-2021-04-28 16:29:34.341	[34minfo[0m	log/log.go:20	Broker [http] Connected to [::]:38007
-2021-04-28 16:29:34.343	[34minfo[0m	log/log.go:20	Registry [mdns] Registering node: com.mtbapp.webshell-1b3477eb-f91c-4fc1-942e-a17af20e8a7a
-2021-04-28 16:29:34.350	[34minfo[0m	srv-webshell/main.go:35	Info	{"webshell-srv": "webshell-srv is AfterStart ..."}

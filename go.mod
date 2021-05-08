@@ -4,6 +4,7 @@ go 1.14
 
 require (
 	github.com/coreos/etcd v3.3.18+incompatible // indirect
+	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
 	github.com/golang/mock v1.3.1 // indirect
 	github.com/golang/protobuf v1.5.2

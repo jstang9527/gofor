@@ -1,0 +1,8 @@
+{
+    "go.lintFlags": [
+        "-min_confidence=.8",
+        "--disable=all", 
+        "--enable=errcheck"
+        ],
+    "go.vetOnSave": "off",
+}
