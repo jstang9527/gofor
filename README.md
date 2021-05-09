@@ -37,3 +37,4 @@ curl -H "Content-Type:application/json;charset=utf-8" -X POST -d '{"target":"htt
 | VUL-2021-04272  | ThinkPHP5 5.0.23 Remote Code Execution Vulnerability |
 | CVE-2017-10271  | Weblogic < 10.3.6 'wls-wsat' XMLDecoder 反序列化漏洞 |
 | VUL-2021-05081  | Redis Unauthorized Vulnerability 漏洞 |
+| CVE-2018-7600   | Drupal Drupalgeddon 2 Remote Code Execution Vulnerability |
